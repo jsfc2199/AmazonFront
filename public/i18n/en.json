@@ -1,7 +1,14 @@
 {
   "NAVBAR": {
+    "APP": "Amazon Clone",
     "CART": "Cart",
     "RECENT_ORDERS": "Recent Orders",
-    "SEND_TO": "Send to"
+    "SEND_TO": "Send to",
+    "BUY_AGAIN": "Buy Again",
+    "HISTORIAL": "History",
+    "CUSTOMER_SERVICE": "Customer Service"
+  },
+  "PLACEHOLDER": {
+    "SEARCH_PRODUCTS": "Search Products..."
   }
 }

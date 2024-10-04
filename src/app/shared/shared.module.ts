@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 import { SearchNavBarComponent } from './components/search-nav-bar/search-nav-bar.component';
 import { OptionsNavBarComponent } from './components/options-nav-bar/options-nav-bar.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -14,7 +15,8 @@ import { OptionsNavBarComponent } from './components/options-nav-bar/options-nav
   ],
   imports: [
     CommonModule,
-    SharedRoutingModule
+    SharedRoutingModule,
+    TranslateModule
   ],
   exports:[
     SearchNavBarComponent,

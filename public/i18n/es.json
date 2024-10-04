@@ -1,7 +1,14 @@
 {
   "NAVBAR": {
+    "APP": "Clon de Amazon",
     "CART": "Carrito",
     "RECENT_ORDERS": "Pedidos Recientes",
-    "SEND_TO": "Enviar a"
+    "SEND_TO": "Enviar a",
+    "BUY_AGAIN": "Comprar de nuevo",
+    "HISTORIAL": "Historial",
+    "CUSTOMER_SERVICE": "Servicio al Cliente"
+  },
+  "PLACEHOLDER": {
+    "SEARCH_PRODUCTS": "Buscar productos..."
   }
 }
