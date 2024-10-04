@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#"> Amazon Clone </a>
+
+    <!-- Enviar a -->
+    <div class="navbar-text ms-2 me-4 hoverable" style="cursor: pointer">
+      <span class="navbar-text">Enviar a {{ country }}</span>
+    </div>
+
+    <form class="d-flex ms-2 me-auto flex-md-grow-1">
+      <div class="input-group">
+        <input
+          class="form-control"
+          type="search"
+          placeholder="Buscar productos..."
+          aria-label="Buscar"
+        />
+        <button class="btn btn-outline-secondary" type="button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </form>
+
+    <!-- TODO: Cambiar idioma de la app -->
+    <div class="dropdown ms-2">
+      <button
+        class="btn btn-outline-secondary dropdown-toggle"
+        type="button"
+        id="languageDropdown"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        {{ selectedLanguage }}
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+        <li>
+          <a class="dropdown-item" href="#" (click)="changeLanguage('English')">English</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="#" (click)="changeLanguage('Español')">Español</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Pedidos recientes -->
+    <div class="navbar-link ms-4 hoverable" style="cursor: pointer">
+      <span class="navbar-text">Pedidos Recientes</span>
+    </div>
+
+    <a class="nav-link ms-4" href="#">
+      <i class="fas fa-shopping-cart"></i>
+      Carrito ({{ counter }})
+    </a>
+
+    <div class="nav-link ms-4">
+      <i *ngIf="!isDarkMode" class="fa-regular fa-moon" (click)="toggleTheme()" style="cursor: pointer;"></i>
+      <i *ngIf="isDarkMode" class="fa-regular fa-sun" (click)="toggleTheme()" style="cursor: pointer;"></i>
+    </div>
+  </div>
+</nav>
