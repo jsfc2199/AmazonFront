@@ -1,0 +1,22 @@
+/* Contenedor principal del carrusel y contenido adicional */
+.home-container {
+  position: relative; /* Para permitir la superposición */
+  max-width: 1600px; /* Ajustar el ancho máximo según la web de Amazon */
+  margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.home-content {
+  position: relative; /* Para permitir la superposición */
+  z-index: 1; /* Para asegurar de que esté encima del carrusel */
+  padding: 20px;
+  margin-top: -20%; /* Ajustar este valor según el espacio deseado */
+}
+
+/* Ajustar el carrusel para que ocupe toda la altura */
+home-img-carousel {
+  height: 75vh; /* Ajustar según el tamaño que desees */
+  position: relative;
+  mask-image: linear-gradient(black 10%, transparent); /* Efecto de desvanecimiento en el carrousel*/
+}
+
+
