@@ -6,21 +6,21 @@ import { SharedModule } from '../../shared/shared.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { HomeLayoutComponent } from './home-layout/home-layout.component';
 import { ImgCarouselComponent } from './components/img-carousel/img-carousel.component';
+import { ProductsModule } from '../products.module';
+
 
 
 @NgModule({
   declarations: [
     HomeLayoutComponent,
     ImgCarouselComponent,
-    //TODO: Product components
-    // ProductCardComponent,
-    // ProductListComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
     SharedModule,
-    TranslateModule
+    TranslateModule,
+    ProductsModule
   ]
 })
 export class HomeModule { }

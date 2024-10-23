@@ -5,13 +5,15 @@ import { SharedRoutingModule } from './shared-routing.module';
 import { SearchNavBarComponent } from './components/search-nav-bar/search-nav-bar.component';
 import { OptionsNavBarComponent } from './components/options-nav-bar/options-nav-bar.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { TruncatePipe } from './pipes/truncate.pipe';
 
 
 
 @NgModule({
   declarations: [
     SearchNavBarComponent,
-    OptionsNavBarComponent
+    OptionsNavBarComponent,
+    TruncatePipe
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,9 @@ import { TranslateModule } from '@ngx-translate/core';
   ],
   exports:[
     SearchNavBarComponent,
-    OptionsNavBarComponent
+    OptionsNavBarComponent,
+    TruncatePipe,
+    TranslateModule
   ]
 })
 export class SharedModule { }

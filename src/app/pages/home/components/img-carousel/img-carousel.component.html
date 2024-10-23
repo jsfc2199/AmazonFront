@@ -1,17 +1,38 @@
 <div id="imagesCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item" *ngFor="let image of images; let i = index" [ngClass]="{'active': i === 0}">
-      <div class="image-container" [ngClass]="{'error': image.hasError}">
-        <img [src]="image.src" class="d-block w-100" [alt]="image.alt" loading="lazy" (error)="onError(image)">
+    <div
+      class="carousel-item"
+      *ngFor="let image of images; let i = index"
+      [ngClass]="{ active: i === 0 }"
+    >
+    <!-- uso de eager para la imagen que mas pesa LCP -->
+      <div class="image-container" [ngClass]="{ error: image.hasError }">
+        <img
+          [src]="image.src"
+          class="d-block w-100"
+          [alt]="image.alt"
+          [loading]="i === 0 ? 'eager' : 'lazy'"
+          (error)="onError(image)"
+        />
         <div class="alt-text" *ngIf="image.hasError">{{ image.alt }}</div>
       </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#imagesCarousel" data-bs-slide="prev">
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#imagesCarousel"
+    data-bs-slide="prev"
+  >
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#imagesCarousel" data-bs-slide="next">
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#imagesCarousel"
+    data-bs-slide="next"
+  >
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>

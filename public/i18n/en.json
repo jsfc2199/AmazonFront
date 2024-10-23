@@ -10,5 +10,11 @@
   },
   "PLACEHOLDER": {
     "SEARCH_PRODUCTS": "Search Products..."
+  },
+  "CARD":{
+    "RATING": "Rating",
+    "PRICE": "Price",
+    "INFO": "More Info"
   }
+
 }

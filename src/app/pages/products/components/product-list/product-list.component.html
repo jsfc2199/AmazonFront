@@ -1,0 +1,5 @@
+<div class="row">
+  <div class="col-3" *ngFor="let product of products">
+    <product-card [product]="product" buttonContent="{{'CARD.INFO' | translate}}"></product-card>
+  </div>
+</div>
